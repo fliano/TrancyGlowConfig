@@ -1,0 +1,11 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/fliano
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: pmw361032
+      import: app/west.yml
+  self:
+    path: config
