@@ -14,8 +14,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: tracktyl_left
+    shield: trancyglow_left
   - board: nice_nano_v2
-    shield: tracktyl_right
-  - board: nice_nano_v2
-    shield: settings_reset
+    shield: trancyglow_right

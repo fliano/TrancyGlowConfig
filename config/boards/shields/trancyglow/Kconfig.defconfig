@@ -1,7 +1,7 @@
-if Tracktyl_LEFT
+if TrancyGlow_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Tracktyl"
+    default "TrancyGlow"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -9,7 +9,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 endif
  
 
-if Tracktyl_LEFT || Tracktyl_RIGHT
+if TrancyGlow_LEFT || TrancyGlow_RIGHT
 
 config ZMK_SPLIT
     default y

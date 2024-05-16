@@ -1,6 +1,6 @@
-// tracktyl_left.overlay
+// trancyglow_left.overlay
 
-#include "tracktyl.dtsi" // Notice that the main dtsi files are included in the overlay.
+#include "trancyglow.dtsi" // Notice that the main dtsi files are included in the overlay.
 
 &kscan0 {
     col-gpios

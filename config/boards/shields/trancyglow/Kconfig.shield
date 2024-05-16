@@ -1,0 +1,5 @@
+config TrancyGlow_LEFT
+    def_bool $(shields_list_contains,trancyglow_left)
+
+config TrancyGlow_RIGHT
+    def_bool $(shields_list_contains,trancyglow_right)

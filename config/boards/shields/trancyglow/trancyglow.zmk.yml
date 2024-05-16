@@ -1,8 +1,8 @@
 file_format: "1"
-id: tracktyl
-name: tracktyl
+id: trancyglow
+name: trancyglow
 type: shield
-url: https://github.com/b4nn4n4
+url: https://github.com/fliano
 requires:
   - pro_micro
 exposes:
@@ -10,5 +10,5 @@ features:
   - keys
   - pointer
 siblings:
-  - tracktyl_left
-  - tracktyl_right
+  - trancyglow_left
+  - trancyglow_right
