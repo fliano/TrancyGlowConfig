@@ -102,7 +102,7 @@
                         label = "";
                         bindings = <
    &none       &kp Q         &kp W       &kp F             &kp P           &kp G               /**/ &kp J            &kp L        &kp U       &kp Y         &uscesc        &none
-   &none       &kp A         &kp R       &kp S             &kp T           &kp D               /**/ &kp H            &kp N        &kp E       &kp I         &kp O          &none
+   &none       &kp A         &kp R       &kp S             &kp T           &kp D               /**/ &kp H            &kp N        &kp E       &rgb_ug RGB_BRI         &kp O          &none
    &none       &kp Z         &kp X       &kp C             &kp V           &kp B               /**/ &kp K            &kp M        &kp COMMA   &bhm LALT DOT &bhm LGUI SEMI &none
                                          &blt NUMBERS TAB  &blt SYMBOLS RET &bhm LCTRL SPACE   /**/ &kp LSHIFT   &delbspc  &mo NAVIGATION
                         >;
