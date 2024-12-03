@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/rgb.h>
+//#include <dt-bindings/zmk/rgb.h>
 
 #define SYMBOLS 1
 #define ARROWS 2
@@ -104,7 +104,7 @@
                         bindings = <
           &kp Q         &kp W       &kp F             &kp P           &kp G               /**/ &kp J            &kp L        &kp U       &kp Y         &uscesc        
           &kp A         &kp R       &kp S             &kp T           &kp D               /**/ &kp H            &kp N        &kp E       &kp I         &kp O          
-          &kp Z         &kp X       &kp C             &kp V           &kp B               /**/ &kp K            &kp M        &kp COMMA   &bhm LALT DOT &bhm LGUI SEMI 
+          &mm MOVE_LEFT &kp X       &kp C             &kp V           &kp B               /**/ &kp K            &kp M        &kp COMMA   &bhm LALT DOT &bhm LGUI SEMI 
                                          &blt NUMBERS TAB  &blt SYMBOLS RET &bhm LCTRL SPACE   /**/ &kp LSHIFT   &delbspc  &mo NAVIGATION
                         >;
                         trackball-bindings = <&tmv>;

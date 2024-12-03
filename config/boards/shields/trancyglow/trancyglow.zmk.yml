@@ -8,7 +8,6 @@ requires:
 exposes:
 features:
   - keys
-  - pointer
 siblings:
   - trancyglow_left
   - trancyglow_right
