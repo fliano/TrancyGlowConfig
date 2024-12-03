@@ -14,10 +14,6 @@
   continue-list = <UNDERSCORE ESC>;
 };
         
-&led_strip {
-  chain-length = <5>;
-};
-
 / {
         combos {
           compatible = "zmk,combos";
