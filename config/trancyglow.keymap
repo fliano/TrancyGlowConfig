@@ -103,7 +103,6 @@
           &mm MOVE_LEFT &kp X       &kp C             &kp V           &kp B               /**/ &kp K            &kp M        &kp COMMA   &bhm LALT DOT &bhm LGUI SEMI 
                                          &blt NUMBERS TAB  &blt SYMBOLS RET &bhm LCTRL SPACE   /**/ &kp LSHIFT   &delbspc  &mo NAVIGATION
                         >;
-                        trackball-bindings = <&tmv>;
                 };
                 lower_layer { //1
                         label = "";
@@ -113,7 +112,6 @@
         &none        &kp GRAVE   &kp APOS    &kp DQT    &kp HASH   /**/ &none      &kp LT     &kp GT    &kp LBKT  &kp RBKT
                            	          &mo 5       &none      &none      /**/ &bhm LSHIFT EQUAL &kp LC(BSPC) &mo NAVIGATION
                         >;
-                        trackball-bindings = <&tmv>;
                 };
 
                 raise_layer { //2
@@ -124,7 +122,6 @@
         &none        &none      &none       &none       &none      /**/  &none  &none      &kp C_VOL_DN &kp C_VOL_UP &none     
                    	                  &mo NUMBERS &mo SYMBOLS &kp LCTRL  /**/  &none  &none      &mo 5
                   >;
-                  trackball-bindings = <&tmv>;
                 };
 
                 lgui_layer { //3
@@ -135,7 +132,6 @@
         &kp LG(N6)         &kp LG(N7) &kp LG(N8) &kp LG(V)         &kp LG(N0)         /**/ &none     &none            &none        &none      &none             
                         	                  &kp LG(D)  &kp LG(F)         &bhm LCTRL LG(RET) /**/ &none     &none            &none
                   >;
-                  trackball-bindings = <&tmv>;
                 };
 
                 prebt_layer { //4
@@ -146,7 +142,6 @@
              &kp F11 &kp F12 &none  &none  &none &none  &none  &none  &none   &none   
                                    &none &none &none   &none &none &mo 5
                   >;
-                  trackball-bindings = <&tmv>;
                 };
 
                 bt_layer { //5
@@ -157,7 +152,6 @@
             &none &none &none &none &none                                           &none &none &none &none &none
                               &none &none &none 					      &none &none &none
                   >;
-                  trackball-bindings = <&tmv>;
                 };
 
 //                empty_layer { //3
@@ -168,7 +162,6 @@
 //   &none  &none   &none      &none     &none     &none    /**/    &none  &none &none &none  &none     &none
 //                    	          &none     &none     &none     /**/   &none  &none      &none
 //                  >;
-//						trackball-bindings = <&tmv>;
 //                };
 //               empty_layer { //6
 //                 label = "";
@@ -178,7 +171,6 @@
 //  &kp LCTRL &kp Z   &kp X      &kp C     &kp V     &kp B    /**/    &kp N  &kp M &kp COMMA &kp DOT  &kp SLASH     &none
 //                   	          &mo NUMBERS     &mo SYMBOLS     &kp SPACE     /**/   &kp RET  &mo ARROWS      &none
 //                 >;
-//                 trackball-bindings = <&tmv>;
 //               };
         };
 };
