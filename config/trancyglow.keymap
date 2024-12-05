@@ -20,6 +20,9 @@
   chain-length = <5>;
 };
 
+#define MOUSE 2
+#define SCROLL 3
+
 / {
         combos {
           compatible = "zmk,combos";
@@ -101,7 +104,7 @@
         trackball_listener {
             compatible = "zmk,input-listener";
             device = <&trackball_split>;
-            input-processors = <&zip_temp_layer 2 1000>;
+            input-processors = <&zip_temp_layer MOUSE 1000>;
 
             scroll {
                 layers = <SCROLL>;
@@ -126,11 +129,11 @@
         mmv_input_listener {
             compatible = "zmk,input-listener";
             device = <&mm>;
-            input-processors = <&zip_xy_scaler 1 1>, <&zip_temp_layer 2 1000>;
+            input-processors = <&zip_xy_scaler 1 1>, <&zip_temp_layer MOUSE 1000>;
 
             scroll {
                 inherit;
-                layers = <2>;
+                layers = <MOUSE>;
                 input-processors = <&zip_xy_scaler 1 50>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
             };
         };
