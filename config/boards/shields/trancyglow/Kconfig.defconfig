@@ -1,20 +1,16 @@
-if TrancyGlow_LEFT
+if TrancyGlow_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "TrancyGlow"
 
-config ZMK_SPLIT
+config ZMK_SPLIT_ROLE_CENTRAL
     default y
-
-config ZMK_SLEEP
-	default y
-
 endif
  
 
 if TrancyGlow_LEFT || TrancyGlow_RIGHT
 
-config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT
     default y
 
 config ZMK_SLEEP
