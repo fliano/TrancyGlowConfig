@@ -21,7 +21,7 @@
   chain-length = <5>;
 };
 
-#define MOUSE 2
+#define MOUSE 0
 #define SCROLL 3
 
 / {
