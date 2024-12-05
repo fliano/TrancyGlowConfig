@@ -101,7 +101,7 @@
         trackball_listener {
             compatible = "zmk,input-listener";
             device = <&trackball_split>;
-            input-processors = <&zip_temp_layer MOUSE 1000>;
+            input-processors = <&zip_temp_layer 2 1000>;
 
             scroll {
                 layers = <SCROLL>;
@@ -126,11 +126,11 @@
         mmv_input_listener {
             compatible = "zmk,input-listener";
             device = <&mm>;
-            input-processors = <&zip_xy_scaler 1 1>, <&zip_temp_layer MOUSE 1000>;
+            input-processors = <&zip_xy_scaler 1 1>, <&zip_temp_layer 2 1000>;
 
             scroll {
                 inherit;
-                layers = <MOUSE>;
+                layers = <2>;
                 input-processors = <&zip_xy_scaler 1 50>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
             };
         };
