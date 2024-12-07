@@ -103,7 +103,7 @@
 //        };
 
         trackball_listener {
-            compatible = "zmk,input-listener";
+            compatible = "zmk,input-split";
             device = <&trackball_split>;
             input-processors = <&zip_temp_layer MOUSE 1000>;
 
@@ -128,7 +128,7 @@
 
         // mapping the fake keys to mouse device tack to the layers
         mmv_input_listener {
-            compatible = "zmk,input-listener";
+            compatible = "zmk,input-split";
             device = <&mm>;
             input-processors = <&zip_xy_scaler 1 1>, <&zip_temp_layer MOUSE 1000>;
 
