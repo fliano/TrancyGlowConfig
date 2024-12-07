@@ -1,4 +1,4 @@
-if TrancyGlow_LEFT
+if TrancyGlow_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "TrancyGlow"

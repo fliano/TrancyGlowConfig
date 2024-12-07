@@ -104,7 +104,7 @@
 
         trackball_listener {
             compatible = "zmk,input-listener";
-            device = <&trackball_split>;
+            device = <&trackball>;
             input-processors = <&zip_temp_layer MOUSE 1000>;
 
             scroll {

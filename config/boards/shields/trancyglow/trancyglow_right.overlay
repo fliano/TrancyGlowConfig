@@ -39,8 +39,3 @@ trackball_spi: &spi1 {
         y-input-code = <INPUT_REL_Y>;
     };
 };
-
-&trackball_split {
-    device = <&trackball>;
-    input-processors = <&zip_xy_scaler 1 1>;
-};
