@@ -42,5 +42,5 @@ trackball_spi: &spi1 {
 
 &trackball_split {
     device = <&trackball>;
-    input-processors = <&zip_xy_scaler 1 6>;
+    input-processors = <&zip_xy_scaler 1 1>;
 };
