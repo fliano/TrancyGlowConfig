@@ -49,7 +49,7 @@
             compatible = "zmk,input-split";
             reg = <0>;
         };
-    }
+    };
 
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
