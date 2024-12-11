@@ -12,6 +12,8 @@
 #define ARROWS 2
 #define NAVIGATION 3
 #define NUMBERS 4
+#define MOUSE 0
+#define SCROLL 3
 
 &caps_word {
   continue-list = <UNDERSCORE ESC>;
@@ -21,8 +23,6 @@
   chain-length = <5>;
 };
 
-#define MOUSE 0
-#define SCROLL 3
 
 / {
         combos {
@@ -102,16 +102,16 @@
 //          };
 //        };
 
-        trackball_listener {
-            compatible = "zmk,input-listener";
-            device = <&trackball_split>;
-            input-processors = <&zip_xy_scaler 1 6>,<&zip_temp_layer MOUSE 1000>;
-
-            scroll {
-                layers = <SCROLL>;
-                input-processors = <&zip_xy_scaler 1 30>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
-            };
-        };
+//       trackball_listener {
+//           compatible = "zmk,input-listener";
+//           device = <&trackball_split>;
+//           input-processors = <&zip_xy_scaler 1 6>,<&zip_temp_layer MOUSE 1000>;
+//
+//           scroll {
+//               layers = <SCROLL>;
+//               input-processors = <&zip_xy_scaler 1 30>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
+//           };
+//       };
 
         behaviors {
             // keys to a fake mouse input device
