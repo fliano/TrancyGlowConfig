@@ -1,13 +1,13 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/fliano
     - name: pmw3610
       url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: underglow-status-current-zmk-master
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: pmw3610
