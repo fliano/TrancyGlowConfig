@@ -1,5 +1,3 @@
-// trancyglow_left.overlay
-
 #include "trancyglow.dtsi"
 
 &kscan0 {
