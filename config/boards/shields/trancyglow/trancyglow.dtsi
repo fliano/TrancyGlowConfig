@@ -33,12 +33,6 @@
         wakeup-source;
 
         diode-direction = "row2col";
-        row-gpios
-          = <&pro_micro 10 (GPIO_ACTIVE_HIGH)> // Row A from the schematic file
-            , <&pro_micro 15 (GPIO_ACTIVE_HIGH)> // Row B from the schematic file
-            , <&pro_micro 14 (GPIO_ACTIVE_HIGH)> // Row C from the schematic file
-            , <&pro_micro 16 (GPIO_ACTIVE_HIGH)> // Row D from the schematic file
-        ;
     };   
 
     split_inputs {
