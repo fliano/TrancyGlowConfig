@@ -1,6 +1,6 @@
 // trancyglow_left.overlay
 
-#include "trancyglow.dtsi" // Notice that the main dtsi files are included in the overlay.
+#include "trancyglow.dtsi"
 
 &default_transform {
     col-offset = <5>;
