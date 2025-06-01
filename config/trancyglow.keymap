@@ -11,7 +11,8 @@
 #define SYMBOLS 1
 #define NAVIGATION 2
 #define NUMBERS 3
-#define MOUSE 0
+#define BLUETOOTH 4
+#define MOUSE 5
 #define SCROLL 1
 
 &caps_word {
@@ -129,7 +130,7 @@
         &kp TILDE    &kp AMPS    &kp PIPE    &kp COLON  &kp PRCNT  /**/ &kp CARET  &kp STAR   &kp SLASH &kp BSLH  &none   
         &kp PLUS     &kp MINUS   &kp EXCL    &kp QMARK  &kp AT     /**/ &kp DLLR   &kp LPAR   &kp RPAR  &kp LBRC  &kp RBRC
         &none        &kp GRAVE   &kp APOS    &kp DQT    &kp HASH   /**/ &none      &kp LT     &kp GT    &kp LBKT  &kp RBKT
-                           	          &mo 5       &none      &none      /**/ &bhm LSHIFT EQUAL &kp LC(BSPC)
+                           	          &mo BLUETOOTH       &none      &none      /**/ &bhm LSHIFT EQUAL &kp LC(BSPC)
                         >;
                 };
 
@@ -149,7 +150,7 @@
              &kp F1 &kp F2 &kp F3 &kp F4 &kp F5  &kp F6 &kp F7 &kp F8 &kp F9  &kp F10 
              &kp N1 &kp N2 &kp N3 &kp N4 &kp N5  &kp N6 &kp N7 &kp N8 &kp N9  &kp N0  
              &kp F11 &kp F12 &none  &none  &none &none  &none  &none  &none   &none   
-                                   &none &none &none   &none &none &mo 5
+                                   &none &none &none   &none &none &mo BLUETOOTH
                   >;
                 };
 
@@ -160,6 +161,16 @@
             &none &none &none &sys_reset &none                                      &none &sys_reset &none &none &none 
             &none &none &none &none &none                                           &none &none &none &none &none
                               &none &none &none 					      &none &none &none
+                  >;
+                };
+
+                mouse_layer { //5
+                  label = "";
+                  bindings = <
+                    &trans &trans &trans &trans &trans &trans &trans &mkp MB4 &mkp MB5 &trans 
+                    &trans &trans &trans &trans &trans &trans &mkp LCLK &mkp RCLK &mkp MCLK &trans 
+                    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+                                  &trans &trans &trans &trans &trans 
                   >;
                 };
 
