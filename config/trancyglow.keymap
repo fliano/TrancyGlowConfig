@@ -12,7 +12,7 @@
 #define NAVIGATION 2
 #define NUMBERS 3
 #define MOUSE 0
-#define SCROLL 2
+#define SCROLL 1
 
 &caps_word {
   continue-list = <UNDERSCORE ESC>;
@@ -78,7 +78,7 @@
           delbspc: delete_backspace {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&blt ARROWS BSPC>, <&blt ARROWS DEL>;
+            bindings = <&blt NAVIGATION BSPC>, <&blt NAVIGATION DEL>;
             mods = <(MOD_LCTL)>;
           };
         };
@@ -179,6 +179,8 @@
 //  &kp LSHIFT &kp A   &kp S  &kp D  &kp F   &kp G    /**/    &kp H  &kp J   &kp K &kp L      &kp SEMI &kp APOS
 //  &kp LCTRL &kp Z   &kp X      &kp C     &kp V     &kp B    /**/    &kp N  &kp M &kp COMMA &kp DOT  &kp SLASH     &none
 //                   	          &mo NUMBERS     &mo SYMBOLS     &kp SPACE     /**/   &kp RET  &mo ARROWS      &none
+
+
 //                 >;
 //               };
         };
