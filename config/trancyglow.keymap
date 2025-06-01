@@ -19,9 +19,9 @@
   continue-list = <UNDERSCORE ESC>;
 };
         
-&led_strip {
-  chain-length = <5>;
-};
+//&led_strip {
+//  chain-length = <5>;
+//};
 
 
 / {
