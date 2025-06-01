@@ -138,9 +138,9 @@
                 raise_layer { //2
                   label = "";
                   bindings = <
-        &kp LG(LC(Q))      &kp LG(W)  &kp LG(X)  &kp LG(R)         &kp LG(SPACE)      /**/ &kp LG(J)     &kp LG(N)        &kp LG(E)    &kp LG(I)  &kp LG(O)     
+        &kp LG(LC(Q))      &kp LG(W)  &kp LG(X)  &kp LG(R)         &kp LG(SPACE)      /**/ &kp LG(J)          &none            &kp HOME     &kp END    &none
         &kp LG(N1)         &kp LG(N2) &kp LG(N3) &kp LG(N4)        &kp LG(N5)         /**/ &kp LG(H)     &kp LEFT         &kp DOWN     &kp UP     &kp RIGHT         
-        &kp LG(N6)         &kp LG(N7) &kp LG(N8) &kp LG(V)         &kp LG(N0)         /**/ &kp LG(LC(S)) &none            &kp HOME     &kp END    &none             
+        &kp LG(N6)         &kp LG(N7) &kp LG(N8) &kp LG(V)         &kp LG(N0)         /**/ &kp LG(LC(S)) &kp LG(N)        &kp LG(E)    &kp LG(I)  &kp LG(O)             
                                       &kp LG(D)  &kp LG(F)         &bhm LCTRL LG(RET) /**/ &none         &none            &none
                   >;
                 };
@@ -160,7 +160,7 @@
                   bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR   &none &none &none &none &none &tog 6
             &none &none &none &sys_reset &none                                      &none &sys_reset &none &none &none 
-            &none &none &none &none &none                                           &none &none &none &none &none
+            &none &none &none &none &none                                           &none &none &none &none &none 
                               &none &none &none 					      &none &none &none
                   >;
                 };
