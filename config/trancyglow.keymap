@@ -9,11 +9,10 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 #define SYMBOLS 1
-#define ARROWS 2
-#define NAVIGATION 3
-#define NUMBERS 4
+#define NAVIGATION 2
+#define NUMBERS 3
 #define MOUSE 0
-#define SCROLL 3
+#define SCROLL 2
 
 &caps_word {
   continue-list = <UNDERSCORE ESC>;
@@ -121,7 +120,7 @@
           &kp Q         &kp W       &kp F             &kp P           &kp G               /**/ &kp J            &kp L        &kp U       &kp Y         &uscesc        
           &kp A         &kp R       &kp S             &kp T           &kp D               /**/ &kp H            &kp N        &kp E       &kp I         &kp O          
           &kp Z         &kp X       &kp C             &kp V           &kp B               /**/ &kp K            &kp M        &kp COMMA   &bhm LALT DOT &bhm LGUI SEMI 
-                                         &blt NUMBERS TAB  &blt SYMBOLS RET &bhm LCTRL SPACE   /**/ &kp LSHIFT   &delbspc  &mo NAVIGATION
+                                         &blt NUMBERS TAB  &blt SYMBOLS RET &bhm LCTRL SPACE   /**/ &kp LSHIFT   &delbspc
                         >;
                 };
                 lower_layer { //1
@@ -130,31 +129,21 @@
         &kp TILDE    &kp AMPS    &kp PIPE    &kp COLON  &kp PRCNT  /**/ &kp CARET  &kp STAR   &kp SLASH &kp BSLH  &none   
         &kp PLUS     &kp MINUS   &kp EXCL    &kp QMARK  &kp AT     /**/ &kp DLLR   &kp LPAR   &kp RPAR  &kp LBRC  &kp RBRC
         &none        &kp GRAVE   &kp APOS    &kp DQT    &kp HASH   /**/ &none      &kp LT     &kp GT    &kp LBKT  &kp RBKT
-                           	          &mo 5       &none      &none      /**/ &bhm LSHIFT EQUAL &kp LC(BSPC) &mo NAVIGATION
+                           	          &mo 5       &none      &none      /**/ &bhm LSHIFT EQUAL &kp LC(BSPC)
                         >;
                 };
 
                 raise_layer { //2
                   label = "";
                   bindings = <
-        &none        &none      &none       &none       &none      /**/  &none  &none      &kp HOME     &kp END      &none     
-        &none   &none        &none        &none         &none      /**/  &none  &kp LEFT   &kp DOWN     &kp UP       &kp RIGHT 
-        &none        &none      &none       &none       &none      /**/  &none  &none      &kp C_VOL_DN &kp C_VOL_UP &none     
-                   	                  &mo NUMBERS &mo SYMBOLS &kp LCTRL  /**/  &none  &none      &mo 5
+        &kp LG(LC(Q))      &kp LG(W)  &kp LG(X)  &kp LG(R)         &kp LG(SPACE)      /**/ &kp LG(J)     &kp LG(N)        &kp LG(E)    &kp LG(I)  &kp LG(O)     
+        &kp LG(N1)         &kp LG(N2) &kp LG(N3) &kp LG(N4)        &kp LG(N5)         /**/ &kp LG(H)     &kp LEFT         &kp DOWN     &kp UP     &kp RIGHT         
+        &kp LG(N6)         &kp LG(N7) &kp LG(N8) &kp LG(V)         &kp LG(N0)         /**/ &kp LG(LC(S)) &none            &kp HOME     &kp END    &none             
+                                      &kp LG(D)  &kp LG(F)         &bhm LCTRL LG(RET) /**/ &none         &none            &none
                   >;
                 };
 
-                lgui_layer { //3
-                  label = "";
-                  bindings = <
-        &kp LG(LC(Q))      &kp LG(W)  &kp LG(X)  &kp LG(R)         &kp LG(SPACE)      /**/ &none     &kp LG(LEFT)     &kp LG(DOWN) &kp LG(UP) &kp LG(RIGHT)     
-        &kp LG(N1)         &kp LG(N2) &kp LG(N3) &kp LG(N4)        &kp LG(N5)         /**/ &kp LG(H) &kp LG(N)        &kp LG(E)    &kp LG(I)  &kp LG(O)         
-        &kp LG(N6)         &kp LG(N7) &kp LG(N8) &kp LG(V)         &kp LG(N0)         /**/ &none     &none            &none        &none      &none             
-                        	                  &kp LG(D)  &kp LG(F)         &bhm LCTRL LG(RET) /**/ &none     &none            &none
-                  >;
-                };
-
-                prebt_layer { //4
+                prebt_layer { //3
                   label = "";
                   bindings = <
              &kp F1 &kp F2 &kp F3 &kp F4 &kp F5  &kp F6 &kp F7 &kp F8 &kp F9  &kp F10 
@@ -164,7 +153,7 @@
                   >;
                 };
 
-                bt_layer { //5
+                bt_layer { //4
                   label = "";
                   bindings = <
             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR   &none &none &none &none &none &tog 6
