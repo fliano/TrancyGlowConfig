@@ -131,7 +131,7 @@
         trackball_listener {
             compatible = "zmk,input-listener";
             device = <&trackball_split>;
-            input-processors = <&zip_xy_scaler 1 12>,<&zip_xy_scaler 3 1>,<&zip_temp_layer MOUSE 1000>;
+            input-processors = <&zip_xy_scaler 1 30>,<&zip_xy_scaler 9 1>,<&zip_temp_layer MOUSE 1000>;
  
             scroll {
                 layers = <SCROLL>;
