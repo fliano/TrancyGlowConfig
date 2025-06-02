@@ -46,6 +46,31 @@
            bindings = <&mkp MB5>;
          };
 
+         combo_lclk {
+           timeout-ms = <50>;
+           key-positions = <1 2>;
+           bindings = <&mkp LCLK>;
+         };
+
+         combo_rclk {
+           timeout-ms = <50>;
+           key-positions = <21 22>;
+           bindings = <&mkp RCLK>;
+         };
+
+         combo_mclk {
+           timeout-ms = <50>;
+           key-positions = <27 28>;
+           bindings = <&mkp MCLK>;
+         };
+
+         combo_shift {
+           timeout-ms = <50>;
+           key-positions = <17 18>;
+           bindings = <&kp LSHIFT>;
+           layers = <MOUSE>;
+         };
+
 //         combo_delbsps {
 //           timeout-ms = <50>;
 //           key-positions = <18 19>;
@@ -106,7 +131,7 @@
         trackball_listener {
             compatible = "zmk,input-listener";
             device = <&trackball_split>;
-            input-processors = <&zip_xy_scaler 1 6>,<&zip_temp_layer MOUSE 1000>;
+            input-processors = <&zip_xy_scaler 1 12>,<&zip_temp_layer MOUSE 1000>;
  
             scroll {
                 layers = <SCROLL>;
@@ -168,10 +193,10 @@
                 mouse_layer { //5
                   label = "";
                   bindings = <
-                    &trans &trans &trans &trans &trans &trans &trans &mkp MB4 &mkp MB5 &trans 
-                    &trans &trans &trans &trans &trans &trans &mkp LCLK &mkp RCLK &mkp MCLK &trans 
                     &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-                                  &trans &kp LSHIFT &trans &trans &trans 
+                    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+                    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+                                  &trans &trans &trans &trans &trans 
                   >;
                 };
 
