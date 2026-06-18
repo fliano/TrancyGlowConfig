@@ -126,7 +126,7 @@
 //            bindings = <&mo NAVIGATION>, <&caps_word>;
 //          };
 //        };
-
+#ifdef ZMK_POINTING
         trackball_listener {
             compatible = "zmk,input-listener";
             device = <&trackball_split>;
@@ -137,7 +137,7 @@
                 input-processors = <&zip_xy_scaler 1 20>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
             };
         };
-
+#endif
         keymap {
                 compatible = "zmk,keymap";
                 default_layer { //0
