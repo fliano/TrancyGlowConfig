@@ -15,3 +15,7 @@
         , <&pro_micro 10 (GPIO_ACTIVE_HIGH)> // Row 4 from the schematic file
     ;
 };
+
+&trackball_listener {
+    status = "okay";
+};
