@@ -16,13 +16,13 @@ include:
   - board: nice_nano_v2
     shield: trancyglow_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    snippet: zmk-usb-logging
+    #snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: trancyglow_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    snippet: zmk-usb-logging
+    #snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: trancyglow_dongle
-    snippet: zmk-usb-logging
+    #snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: settings_reset
