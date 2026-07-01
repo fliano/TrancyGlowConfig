@@ -18,10 +18,6 @@
   continue-list = <UNDERSCORE ESC>;
 };
         
-&led_strip {
-  chain-length = <4>;
-};
-
 
 / {
         combos {

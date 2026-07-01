@@ -1,5 +1,4 @@
 #include "trancyglow.dtsi"
-#include "trancyglow_central_trackpad.dtsi"
 
 &default_transform {
     col-offset = <5>;
